@@ -2,12 +2,16 @@ package udemy.DependencyInjectionXML;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SpringHelloApp {
+public class SetterDemoApp {
+
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Coach coach = context.getBean("myCoach",Coach.class);
-		System.out.println(coach.getDailyWorkout());
+		
+		CricketCoach coach = context.getBean("myCricketCoach",CricketCoach.class);
 		System.out.println(coach.getDailyFortune());
+		System.out.println(coach.getDailyWorkout());
+		System.out.println(coach.getEmailAddress());
+		System.out.println(coach.getTeam());
 		context.close();
 	}
 

@@ -1,4 +1,4 @@
-package udemy.DependencyInjectionXML;
+package udemy.SpringCourse;
 
 public class MyApp {
 	public static void main(String[] Args) {
