@@ -9,4 +9,8 @@ public class RandomCoach implements Coach {
 		return "Do something";
 	}
 
+	public String getDailyFortune() {
+		return null;
+	}
+
 }

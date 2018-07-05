@@ -8,6 +8,7 @@ public class App {
 		Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
 		Coach randomCoach = context.getBean("randomCoach", Coach.class);
 		System.out.println(tennisCoach.getDailyWorkout());
+		System.out.println(tennisCoach.getDailyFortune());
 		System.out.println(randomCoach.getDailyWorkout());
 		context.close();
 	}
